@@ -5,7 +5,7 @@
 
 Hệ thống giúp tự động hóa toàn bộ vòng đời phát triển phần mềm: từ khâu kiểm tra chất lượng mã nguồn, đóng gói sản phẩm, lưu trữ an toàn cho đến khi triển khai lên môi trường cluster.
 
-## 🏗️ Kiến trúc luồng CI/CD (Pipeline Architecture)
+## 🏗️ Kiến trúc luồng CI/CD
 Luồng hoạt động của Pipeline được định nghĩa tự động hóa qua các bước sau:
 1. **Source Control:** Developer đẩy mã nguồn (Push code) lên kho lưu trữ GitHub.
 2. **Trigger Pipeline:** Jenkins tự động nhận diện thay đổi thông qua Webhook và kích hoạt quá trình Build.
@@ -14,7 +14,7 @@ Luồng hoạt động của Pipeline được định nghĩa tự động hóa 
 5. **Containerization:** Jenkins thực thi `Dockerfile` để build Docker Image và đẩy lên Docker Registry.
 6. **Continuous Deployment:** Sử dụng `kubectl` để tự động triển khai (Deploy) Image mới nhất lên cụm **Kubernetes** thông qua các file cấu hình YAML.
 
-## 🛠️ Công nghệ & Công cụ sử dụng (Tech Stack)
+## 🛠️ Công nghệ & Công cụ sử dụng
 * **Quản lý mã nguồn:** Git & GitHub
 * **CI/CD Server:** Jenkins
 * **Quản lý chất lượng mã:** SonarQube
@@ -23,7 +23,6 @@ Luồng hoạt động của Pipeline được định nghĩa tự động hóa 
 * **Điều phối Container:** Kubernetes (Minikube / K8s Cluster)
 
 ## 📂 Cấu trúc thư mục (Repository Structure)
-- `src/` : Mã nguồn ứng dụng
 - `k8s/` : Các file cấu hình Kubernetes (deployment.yaml, service.yaml)
 - `Dockerfile` : Cấu hình đóng gói ứng dụng thành Docker Image
 - `Jenkinsfile` : Script định nghĩa toàn bộ luồng CI/CD (Pipeline as Code)
