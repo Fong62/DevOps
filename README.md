@@ -20,15 +20,15 @@ Luồng hoạt động của Pipeline được định nghĩa tự động hóa 
 * **Quản lý chất lượng mã:** SonarQube
 * **Lưu trữ Artifact:** Sonatype Nexus
 * **Ảo hóa & Đóng gói:** Docker
-* **Điều phối Container:** Kubernetes (Minikube / K8s Cluster)
+* **Điều phối Container:** Kubernetes (K8s Cluster)
 
-## 📂 Cấu trúc thư mục (Repository Structure)
+## 📂 Cấu trúc thư mục
 - `k8s/` : Các file cấu hình Kubernetes (deployment.yaml, service.yaml)
 - `Dockerfile` : Cấu hình đóng gói ứng dụng thành Docker Image
 - `Jenkinsfile` : Script định nghĩa toàn bộ luồng CI/CD (Pipeline as Code)
 - `README.md` : Tài liệu dự án
 
-## ⚙️ Hướng dẫn thiết lập cơ bản (Quick Setup)
+## ⚙️ Hướng dẫn thiết lập cơ bản
 1. Đảm bảo server/máy tính đã cài đặt sẵn Docker, Kubernetes, và Jenkins.
 2. Clone repository này về máy bằng lệnh:
    `git clone https://github.com/Fong62/DevOps.git`
